@@ -67,7 +67,7 @@ It showcases his life, contributions, and achievements in a clean and readable l
 ### Screenshot
 
 #### Tribute Page Preview
-<img width="900" alt="Tribute Page Screenshot" src="https://github.com/user-attachments/assets/YOUR-TRIBUTE-IMAGE-ID" />
+<img width="1894" height="885" alt="Screenshot 2026-03-05 221528" src="https://github.com/user-attachments/assets/c5555a01-f42f-43a6-ab12-aec0864e40bf" />
 
 ### Outcome
 Successfully created a tribute webpage to honor **Dr. A. P. J. Abdul Kalam** as part of the internship tasks.
