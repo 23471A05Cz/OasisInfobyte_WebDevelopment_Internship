@@ -1,22 +1,34 @@
 # OIBSIP Web Development Internship
 
-## Level 2 - Task 1 : Calculator
+## Level 2 – Task 1: Calculator Web Application
 
 ### Objective
-The objective of this project is to create a simple calculator using HTML, CSS, and JavaScript.
+The objective of this project is to design and develop a simple web-based calculator that can perform basic arithmetic operations.
 
 ### Technologies Used
 - HTML
 - CSS
 - JavaScript
+- VS Code
+- GitHub
 
-### Screenshot
+### Project Screenshots
 
-<img width="1093" height="839" alt="Screenshot 2026-03-05 122844" src="https://github.com/user-attachments/assets/622c6b14-e0b9-448b-84a1-98ba2d3bd55f" />
+#### Calculator Interface
+<img width="970" height="804" alt="Calculator Screenshot 1" src="https://github.com/user-attachments/assets/7d37f7b0-71a4-4607-9021-648ff97f0ed8" />
 
+#### Performing Calculations
+<img width="967" height="826" alt="Calculator Screenshot 2" src="https://github.com/user-attachments/assets/67fd374f-469c-494f-b096-1a2026ec00a0" />
 
 ### Description
-This project is a simple web calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division.
+This project is a simple web-based calculator developed using HTML, CSS, and JavaScript.  
+It allows users to perform basic arithmetic operations such as:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
 
 ### Outcome
-Successfully developed a working calculator for the Oasis Infobyte internship.
+Successfully developed a functional calculator web application as part of the **Oasis Infobyte Web Development Internship (OIBSIP)**.  
+This project helped improve my understanding of front-end development and JavaScript functionality.
