@@ -19,6 +19,7 @@ This project is a simple web calculator that performs basic arithmetic operation
 
 ### Screenshots
 <img width="970" height="804" alt="Calculator Screenshot 1" src="https://github.com/user-attachments/assets/7d37f7b0-71a4-4607-9021-648ff97f0ed8" />
+
 <img width="967" height="826" alt="Calculator Screenshot 2" src="https://github.com/user-attachments/assets/67fd374f-469c-494f-b096-1a2026ec00a0" />
 
 ---
