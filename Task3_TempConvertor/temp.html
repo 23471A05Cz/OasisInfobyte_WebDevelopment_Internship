@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Converter</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1684/1684375.png">
+
+<h2>Temperature Converter</h2>
+
+<label>Temperature</label>
+<input type="number" id="tempInput" placeholder="Enter temperature">
+
+<label>From</label>
+<select id="fromUnit">
+<option value="C">Celsius (°C)</option>
+<option value="F">Fahrenheit (°F)</option>
+<option value="K">Kelvin (K)</option>
+</select>
+
+<label>To</label>
+<select id="toUnit">
+<option value="C">Celsius (°C)</option>
+<option value="F">Fahrenheit (°F)</option>
+<option value="K">Kelvin (K)</option>
+</select>
+
+<button onclick="convertTemp()">Convert</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<script>
+
+function convertTemp(){
+
+let temp = document.getElementById("tempInput").value;
+let from = document.getElementById("fromUnit").value;
+let to = document.getElementById("toUnit").value;
+
+if(temp === ""){
+document.getElementById("result").innerHTML="Enter a temperature!";
+return;
+}
+
+temp = parseFloat(temp);
+
+let c;
+
+if(from==="C") c=temp;
+else if(from==="F") c=(temp-32)*5/9;
+else if(from==="K") c=temp-273.15;
+
+let result;
+
+if(to==="C") result=c;
+else if(to==="F") result=(c*9/5)+32;
+else if(to==="K") result=c+273.15;
+
+document.getElementById("result").innerHTML =
+temp + "° " + from + " = " + result.toFixed(2) + "° " + to;
+
+}
+
+</script>
+
+</body>
+</html>
