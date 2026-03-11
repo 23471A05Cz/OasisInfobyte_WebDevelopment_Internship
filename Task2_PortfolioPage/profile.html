@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaik Shabana Portfolio</title>
+
+<style>
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #facc15;
+}
+
+nav h2 {
+  color: #facc15;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #facc15;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding: 0 8%;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #facc15;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #cbd5f5;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  color: #020617;
+  background: #facc15;
+  padding: 12px 25px;
+  margin-right: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  background: #eab308;
+  transform: translateY(-3px);
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 50%;
+  border: 4px solid #facc15;
+}
+
+section {
+  padding: 80px 8%;
+  border-bottom: 1px solid #334155;
+  border-radius: 12px;
+  margin: 40px 0;
+  scroll-margin-top: 100px; /* Fix for sticky navbar */
+}
+
+/* About Section */
+.about {
+  background: #1e293b;
+  text-align: center;
+  padding: 60px 8%;
+}
+
+.about h2 {
+  margin-bottom: 25px;
+  color: #facc15;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  color: #cbd5f5;
+  line-height: 1.8;
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #facc15;
+}
+
+.project-card h3 {
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cbd5f5;
+}
+
+/* Certifications Section */
+.certifications {
+  background: #111827;
+  padding: 40px 8%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.certifications h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #facc15;
+}
+
+.certifications ul {
+  list-style: square;
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.certifications li {
+  color: #cbd5f5;
+  margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.achievements {
+  background: #1e293b;
+  padding: 40px 8%;
+  border-radius: 12px;
+}
+
+.achievements h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #facc15;
+}
+
+.achievements ul {
+  list-style: disc;
+  padding-left: 40px;
+  line-height: 1.8;
+  color: #cbd5f5;
+}
+
+/* Hobbies Section */
+.hobbies {
+  background: #111827;
+  padding: 40px 8%;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hobbies h2 {
+  margin-bottom: 25px;
+  color: #facc15;
+}
+
+.hobbies p {
+  color: #cbd5f5;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Contact Section */
+.contact {
+  background: #1e293b;
+  padding: 60px 8%;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #facc15;
+}
+
+.contact p, .contact a {
+  margin: 8px 0;
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #facc15;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  border-top: 2px solid #facc15;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2> portfolio Page</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Shaik Shabana</span></h1>
+    <p>
+      I am Shaik Shabana, a third-year Computer Science Engineering student at Narasaraopeta Engineering College.
+       I am passionate about technology and enjoy learning new programming languages and development tools. 
+       My areas of interest include web development, software development, and building user-friendly applications.
+       I have worked on several projects such as Aqua Guardians, a water awareness web application built using React, 
+       Time Reminder, a Flutter-based reminder application, Nabi Events, an event management website developed using HTML and CSS, and Chatter Box, a real-time chat application developed during my internship.
+       I have knowledge of programming languages such as C, Python, and JavaScript, and I am also learning modern technologies like React and Flutter to improve my development skills. I enjoy solving problems, participating in hackathons, and exploring new technologies.
+       My goal is to become a successful software developer and contribute to innovative and meaningful technology solutions that can help people and society.
+
+    </p>
+    
+  </div>
+  <img src="c:\Users\shaik\Downloads\Snapchat-573945104-EDIT (1).jpg" alt="Shaik Shabana">
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a dedicated and enthusiastic Computer Science Engineering student with a passion for creating user-friendly
+    and efficient applications. I enjoy learning new technologies, exploring AI & ML, and contributing to open-source projects.
+    Currently expanding my knowledge in frontend development, Flutter, and React frameworks.
+    <br><br>
+    Educational Background: BTech in Computer Science (2027), Intermediate (2023), SSC (2021)
+    <br>
+    Interests: Web Development, AI, Python Programming, Frontend Projects
+    <br>
+    Strengths: Quick Learner, Problem Solving, Team Player, Attention to Detail
+  </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Time Reminder</h3>
+      <p>Flutter app reminding users about scheduled tasks efficiently.</p>
+    </div>
+    <div class="project-card">
+      <h3>Aqua Guardians</h3>
+      <p>React project focused on water conservation awareness.</p>
+    </div>
+    <div class="project-card">
+      <h3>Nabi Events</h3>
+      <p>HTML website for event management with dynamic content.</p>
+    </div>
+    <div class="project-card">
+      <h3>Vahan Bazar</h3>
+      <p>Vehicle marketplace website (in development).</p>
+    </div>
+    <div class="project-card">
+      <h3>Chatter Box</h3>
+      <p>Real-time chat application using WebSockets during Infosys internship.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>L4G Certificate</li>
+    <li>Gemini AI Certification</li>
+    <li>Infosys Internship Certificate – Chatter Box Application</li>
+    <li>NPTEL Certification</li>
+    <li>HackXlerate Certificate</li>
+  </ul>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Completed Infosys Internship – Chatter Box WebSocket Project</li>
+    <li>Top Performer in College Hackathons</li>
+    <li>Participated in National Level Coding Competitions</li>
+    <li>Active Contributor to Open Source Projects</li>
+  </ul>
+</section>
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="hobbies">
+  <h2>Hobbies & Interests</h2>
+  <p>
+    I enjoy reading tech blogs, exploring new programming frameworks, coding challenges, playing chess,
+    and solving real-world problems with technology. I also love participating in hackathons and online coding competitions.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:shaiksaidashabana12@gmail.com">shaiksaidashabana12@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/23471A05Cz" target="_blank">github.com/23471A05Cz</a></p>
+  <p>Mobile: <a href="tel:8125890340">+91 8125890340</a></p>
+</section>
+
+
+
+</body>
+</html>
